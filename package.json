@@ -1,0 +1,44 @@
+{
+  "name": "oktmo-convert",
+  "version": "1.0.0",
+  "author": "Denis Bezrukov @anthrax63",
+  "bin": {
+    "oktmo-convert": "./bin/run"
+  },
+  "bugs": "https://github.com/anthrax63/oktmo-convert/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.0",
+    "objectid": "^3.2.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1.22.2",
+    "eslint": "^5.16.0",
+    "eslint-config-oclif": "^3.1.0",
+    "prettier": "^2.1.2"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/anthrax63/oktmo-convert",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "oktmo-convert"
+  },
+  "repository": "anthrax63/oktmo-convert",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
