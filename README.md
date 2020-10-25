@@ -97,7 +97,7 @@ oktmo-convert -o <dest.json> ./oktmo
 Импортировать в MongoDB
 ```bash
 oktmo-convert -f mongo ./oktmo
-mongoimport --file mongo_subjects.json -c regions -d oktmo-test --drop 
+mongoimport --file mongo_subjects.json -c subjects -d oktmo-test --drop 
 mongoimport --file mongo_regions.json -c regions -d oktmo-test --drop 
 mongoimport --file mongo_localities.json -c localities -d oktmo-test --drop
 ```
