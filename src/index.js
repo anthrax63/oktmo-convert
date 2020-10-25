@@ -52,12 +52,7 @@ class RussianCitiesCommand extends Command {
 
     oktmo
       .filter((item) => item.Kod2.length === 11)
-      .filter(
-        (item) =>
-          item.SubKod2 !== '000' &&
-          item.SubKod3 !== '000' &&
-          item.SubKod4 !== '000'
-      )
+      .filter((item) => item.SubKod2 !== '000' && item.SubKod4 !== '000')
       .forEach((item) => {
         const region = regions[item.SubKod1 + item.SubKod2];
         if (!region) {
